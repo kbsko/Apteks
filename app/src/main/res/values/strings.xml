@@ -8,5 +8,6 @@
     <string name="picture">picture1</string>
     <string name="title_activity_about_apteks">AboutApteks</string>
     <string name="action_settings">Settings</string>
+    <string name="buttonshowonmap">Показать на карте</string>
 
 </resources>
