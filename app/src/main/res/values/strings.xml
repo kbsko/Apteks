@@ -10,5 +10,26 @@
     <string name="action_settings">Settings</string>
     <string name="buttonshowonmap">Показать на карте</string>
     <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_findlekarstv">findlekarstv</string>
+
+    <string-array name="sortlist">
+        <item>наименованию</item>
+        <item>цене</item>
+        <item>адресу аптеки</item>
+        <item>названию аптеки</item>
+    </string-array>
+
+    <string-array name="listdistrict">
+    <item>Все районы</item>
+    <item>Железнодорожный</item>
+    <item>Кировский</item>
+    <item>Ленинский</item>
+    <item>Октябрьский</item>
+    <item>Покровский</item>
+    <item>Свердловский</item>
+    <item>Советский</item>
+    <item>Центральный</item>
+</string-array>
+
 
 </resources>

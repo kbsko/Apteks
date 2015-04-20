@@ -18,6 +18,8 @@ public class MainActivity extends ActionBarActivity {
         TextView textView;
         textView=(TextView)findViewById(R.id.textView);
         textView.setText("Set Find Lekarstv");
+        Intent intent = new Intent(this, findlekarstv.class);
+        startActivity(intent);
 
      }
 
