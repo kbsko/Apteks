@@ -20,6 +20,7 @@
             android:name=".AboutApteks"
             android:label="@string/title_activity_about_apteks" >
         </activity>
+
     </application>
 
 </manifest>

@@ -22,7 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/buttonshowonmap"
-        android:id="@+id/button"
+        android:id="@+id/findmebtn"
+        android:onClick="findme"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/buttonselector"
@@ -53,7 +54,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Район: Октябрьский"
+        android:text="Район: :Железнодорожный"
         android:id="@+id/textView5"
         android:textSize="20dp"
         android:layout_below="@+id/textView4"

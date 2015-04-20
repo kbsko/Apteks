@@ -1,6 +1,8 @@
 package com.dev.mobile.apteks;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -24,6 +26,10 @@ public class MainActivity extends ActionBarActivity {
         TextView textView;
         textView=(TextView)findViewById(R.id.textView);
         textView.setText("Version 1");
+        String geoURI = "geo:0,0?q=красноярск+аптеки&z=20";
+        Uri geo = Uri.parse(geoURI);
+        Intent geoMap = new Intent(Intent.ACTION_VIEW, geo);
+        startActivity(geoMap);
 
     }
 
