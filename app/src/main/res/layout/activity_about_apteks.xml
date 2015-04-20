@@ -6,13 +6,13 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.dev.mobile.apteks.AboutApteks">
 
-    <TextView android:text="Фе­никс, ООО" android:layout_width="match_parent"
+    <TextView android:text="      Фе­никс, ООО" android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:textColor="#ffffffff"
         android:textSize="30dp"
         android:textStyle="bold|italic"
-        android:background="#ff38c147"
+        android:background="@drawable/designbackgroundabout"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
