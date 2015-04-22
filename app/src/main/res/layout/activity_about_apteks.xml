@@ -24,10 +24,10 @@
         android:text="@string/buttonshowonmap"
         android:id="@+id/findmebtn"
         android:onClick="findme"
+        android:background="@drawable/buttonselector"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/buttonselector"
-        android:layout_marginBottom="48dp" />
+        android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="match_parent"
