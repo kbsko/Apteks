@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class AboutApteks extends ActionBarActivity {
+public class AboutPharmacyActivity extends ActionBarActivity {
 
     public void findme(View view) {
         String geoURI = "geo:0,0?q=красноярск+заводская 4&z=20";
@@ -18,11 +18,12 @@ public class AboutApteks extends ActionBarActivity {
         Intent geoMap = new Intent(Intent.ACTION_VIEW, geo);
         startActivity(geoMap);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_apteks);
-        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
 
