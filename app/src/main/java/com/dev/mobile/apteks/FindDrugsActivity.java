@@ -1,6 +1,8 @@
 package com.dev.mobile.apteks;
 
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +25,10 @@ public class FindDrugsActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // TODO create landscape layouts
+
+
         setContentView(R.layout.activity_find_drugs);
 
 
@@ -31,12 +37,11 @@ public class FindDrugsActivity extends ActionBarActivity {
         View header = getLayoutInflater().inflate(R.layout.find_drugs_selectors, lsView, false);
         lsView.addHeaderView(header, null, false);
 
-        this.adapter = new FindDrugsAdapter(this);
+       this.adapter = new FindDrugsAdapter(this);
 
         lsView.setAdapter(this.adapter);
 
 
-     //   setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // TODO create landscape layouts
 
 
     }
@@ -64,11 +69,11 @@ public class FindDrugsActivity extends ActionBarActivity {
     }
 
 
-    /*
+
     public void aboutAptek(View view) {
         Intent intent = new Intent(this, AboutPharmacyActivity.class);
         startActivity(intent);
-    }*/
+    }
 
 
 
