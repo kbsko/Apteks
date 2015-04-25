@@ -72,6 +72,10 @@ public class FindDrugsActivity extends ActionBarActivity {
 
     public void aboutAptek(View view) {
         Intent intent = new Intent(this, AboutPharmacyActivity.class);
+        TextView textView;
+        textView=(TextView) view.findViewById(R.id.pharmacyName);
+        String drug=textView.getText().toString();
+        intent.putExtra("drugname", drug);
         startActivity(intent);
     }
 

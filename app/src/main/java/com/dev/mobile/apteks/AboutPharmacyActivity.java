@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 
 public class AboutPharmacyActivity extends ActionBarActivity {
@@ -24,6 +25,11 @@ public class AboutPharmacyActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_apteks);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        TextView pharmname;
+        String pharmacyname = getIntent().getExtras().getString("drugname");
+        pharmname=(TextView) findViewById(R.id.textView2);
+        pharmname.setText(pharmacyname);
+
     }
 
 
