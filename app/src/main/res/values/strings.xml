@@ -33,7 +33,462 @@
     </string-array>
 
 
+    <string-array name="empty">
+        <item>Город: </item>
+        <item>Район: </item>
+        <item>Улица:</item>
+        <item>Контакные телефоны: </item>
+        <item>Как проехать:</item>
+    </string-array>
+
+
+    <string-array name="botanichbulvar23">
+        <item>Город: Красноярск</item>
+        <item>Район: Октябрьский</item>
+        <item>Улица: Ботанический Бульвар, 23/1</item>
+        <item>Контакные телефоны: 274-74-70, 274-74-73</item>
+        <item>Как проехать:</item>
+        <item>ост. пос. ГЭС.</item>
+        <item>Автобус № 4, 14, 34, 38, 71, 80, 89</item>
+    </string-array>
+
+    <string-array name="novosibirskaya48">
+        <item>Город: Красноярск</item>
+        <item>Район: Октябрьский</item>
+        <item>Улица: Новосибирская, 48</item>
+        <item>Контакные телефоны: 246-17-52, 246-17-53 </item>
+        <item>Как проехать:</item>
+        <item>ост. Новосибирская</item>
+        <item>Автобус 3, 90, 99 </item>
+    </string-array>
+
+    <string-array name="krasrab77">
+        <item>Город: Красноярск</item>
+        <item>Район: Кировский</item>
+        <item>Улица: Красноярский Рабочий, 77а</item>
+        <item>Контакные телефоны: 265-92-25</item>
+        <item>Как проехать:</item>
+        <item>ост. Кинотеатр Родина</item>
+        <item>Трамвай № 4, 5, 6, 7. </item>
+        <item>Автобус № 1, 2, 9, 18, 23, 28, 33, 40, 43, 55, 79, 89, 90, 95, 159</item>
+    </string-array>
+
+    <string-array name="voronova14_2">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Воронова, 14/2</item>
+        <item>Контакные телефоны: 220-26-71 </item>
+        <item>Как проехать:</item>
+        <item>ост. 10-й микрорайон </item>
+        <item>Троллейбус № 11. </item>
+        <item>Автобус № 20, 61, 65, 69, 71, 81, 83 </item>
+    </string-array>
+
+    <string-array name="krasrab97">
+        <item>Город: Красноярск</item>
+        <item>Район: Кировский</item>
+        <item>Улица: Красноярский Рабочий, 97</item>
+        <item>Контакные телефоны: 231-21-58</item>
+        <item>Как проехать:</item>
+        <item>ост. ТЮЗ (проспект Газеты Красноярский Рабочий)</item>
+        <item>Автобус № 1, 2, 9, 19, 23, 43, 55, 79, 89, 90, 95, 159 </item>
+    </string-array>
+
+    <string-array name="urvanceva26">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Урванцева, 26</item>
+        <item>Контакные телефоны: 255-66-99 </item>
+        <item>Как проехать:</item>
+        <item>ост. Урванцева. </item>
+        <item>Автобус № 8, 50, 53, 60, 63, 64, 68, 71, 76, 79, 81, 86, 88, 99 </item>
+    </string-array>
+
+
+
+
+
+    <string-array name="partizana_gelez16">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Партизана Железняка, 16а</item>
+        <item>Контакные телефоны: 220-09-20 </item>
+        <item>Как проехать:</item>
+        <item>ост. Краевая больница. </item>
+        <item>Троллейбус № 7, 8, 11. </item>
+        <item>Автобус № 13, 20, 27, 30, 51, 60, 65, 77, 83, 85, 86, 87, 91, 193</item>
+    </string-array>
+
+    <string-array name="dobrolbrigad10">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: 78 Добровольческой Бригады, 10</item>
+        <item>Контакные телефоны: 275-11-60</item>
+        <item>Как проехать:</item>
+        <item>ост. Аптека ул. 78 Добровольческой Бригады </item>
+        <item>Автобус № 50, 53, 63, 71, 74, 79, 81, 98</item>
+    </string-array>
+
+    <string-array name="alekseeva21">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Алексеева 21</item>
+        <item>Контакные телефоны: 293-41-45 </item>
+        <item>Как проехать:</item>
+        <item> ост. Авиаторов (ж/м Иннокентьевский) </item>
+        <item> Автобус № 6,50, 53, 63, 71, 74, 76, 79, 81, 98, 122 </item>
+    </string-array>
+
+    <string-array name="mugestva24">
+        <item>Город: Красноярск</item>
+        <item>Район: Центральный</item>
+        <item>Улица: Мужества, 24</item>
+        <item>Контакные телефоны: 223-28-78</item>
+        <item>Как проехать:</item>
+        <item>ост. 7-й микрорайон.</item>
+        <item>Автобус 20, 49, 6 </item>
+    </string-array>
+
+    <string-array name="alexandaramatrosova11">
+        <item>Город: Красноярск</item>
+        <item>Район: Свердловский</item>
+        <item>Улица: Александра Матросова, 11</item>
+        <item>Контакные телефоны: 236-12-44</item>
+        <item>Как проехать:</item>
+        <item>ост. Матросова. </item>
+        <item>Трамвай № 4, 5, 6, 7. </item>
+        <item>Троллейбус № 17. </item>
+        <item>Автобус № 3, 5, 6, 17, 19, 23, 28, 30, 31, 33, 36, 37, 44, 50, 50с, 56, 58, 65, 74, 80, 84, 86, 94, 95</item>
+    </string-array>
+
+
+    <string-array name="kirenskogo58">
+        <item>Город: Красноярск</item>
+        <item>Район: Октябрьский</item>
+        <item>Улица: Академика Киренского, 58</item>
+        <item>Контакные телефоны: 243-74-22</item>
+        <item>Как проехать:</item>
+        <item>ост. Поликлиника (ул. Киренского). </item>
+        <item>Троллейбус № 5, 8</item>
+        <item>Автобус № 2, 3, 31, 35, 38, 63,76, 83 </item>
+    </string-array>
+
+    <string-array name="sixtyletoct43">
+        <item>Город: Красноярск</item>
+        <item>Район: Свердловский</item>
+        <item>Улица: 60 лет Октября, 43</item>
+        <item>Контакные телефоны: 233-71-17</item>
+        <item>Как проехать:</item>
+        <item>ост. Мебельная фабрика. </item>
+        <item>Автобус № 5, 10, 17, 19, 50, 54, 78, 80, 92 </item>
+    </string-array>
+
+
+    <string-array name="sudostritelnaya93">
+        <item>Город: Красноярск</item>
+        <item>Район: Свердловский</item>
+        <item>Улица: Судостроительная, 93</item>
+        <item>Контакные телефоны: 269-32-55 </item>
+        <item>Как проехать:</item>
+        <item>ост. Пашенный</item>
+        <item>Автобус № 23, 31, 36, 86, 94, 95 </item>
+    </string-array>
+
+
+
+    <string-array name="krasrab176">
+        <item>Город: Красноярск</item>
+        <item>Район: Свердловский</item>
+        <item>Улица: Красноярский Рабочий, 176м/1</item>
+        <item>Контакные телефоны: 258-93-00 </item>
+        <item>Как проехать:</item>
+        <item>ост. Предмостная площадь.</item>
+        <item>Трамвай № 4, 5, 6, 7.</item>
+        <item>Троллейбус № 1.</item>
+        <item>Автобус № 1, 2, 3, 5, 6, 12, 17, 19, 23, 28, 30, 31, 33, 36, 37, 43, 44, 50, 50с, 52, 55, 56, 58, 65, 74, 79, 80, 84, 86, 89, 90, 95, 100</item>
+    </string-array>
+
+    <string-array name="dmaya10">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: 9 Мая, 10</item>
+        <item>Контакные телефоны: 223-36-34 </item>
+        <item>График работы: ПН - ВС с 8:00 до 22:00 </item>
+        <item>Как проехать:</item>
+        <item>ост. Северный (9 мая). </item>
+        <item>Троллейбус № 8 </item>
+        <item>Автобус № 23, 50, 53,60, 61, 63, 64, 65, 69, 76, 87, 122</item>
+    </string-array>
+
+    <string-array name="mira128">
+        <item>Город: Красноярск</item>
+        <item>Район: Центральный</item>
+        <item>Улица: Мира проспект, 128</item>
+        <item>Контакные телефоны: 221-64-40 </item>
+        <item>График работы: ПН - ВС с 8:00 до 22:00 </item>
+        <item>Как проехать:</item>
+        <item>ост. Робеспьера (проспект Мира)</item>
+        <item>Автобус № 1, 3, 12, 36, 37, 55, 56, 64, 84</item>
+    </string-array>
+
+    <string-array name="dubrovinskogo106">
+        <item>Город: Красноярск</item>
+        <item>Район: Центральный</item>
+        <item>Улица: Дубровинского, 106</item>
+        <item>Контакные телефоны: 212-02-88</item>
+        <item>График работы: ПН - ВС с 8:00 до 22:00 </item>
+    </string-array>
+
+    <string-array name="shahterov44">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Шахтеров, 44</item>
+        <item>Контакные телефоны: 223-05-45</item>
+        <item>График работы: ПН - ВС с 8:00 до 22:00 </item>
+        <item>Как проехать:</item>
+        <item>ост. Рынок Южный.</item>
+        <item>Автобус № 6, 30, 64, 88</item>
+    </string-array>
+
+
+    <string-array name="sudostritelnaya52">
+        <item>Город: Красноярск</item>
+        <item>Район: Свердловский</item>
+        <item>Улица: Судостроительная, д.52а</item>
+        <item>Контакные телефоны: 269-00-20 </item>
+        <item>График работы: ПН - ВС с 7:30 до 22:00</item>
+        <item>Как проехать:</item>
+        <item>ост. Судоверфь. </item>
+        <item>Автобус № 23, 31, 36, 94, 95, 98</item>
+    </string-array>
+
+    <string-array name="baturina15">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Батурина, 15</item>
+        <item>Контакные телефоны: 254-26-37</item>
+        <item>График работы: пн-пт: 08.00 - 21.00 сб-вс: 10.00 - 21.00</item>
+        <item>Как проехать:</item>
+        <item>ост. Батурина</item>
+        <item>Автобус № 20, 49, 60, 68, 76, 99, 122</item>
+    </string-array>
+
+
+    <string-array name="svetlogorskiy2">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Светлогорский, 2</item>
+        <item>Контакные телефоны: 277-27-44</item>
+        <item>Как проехать:</item>
+        <item>ост. Светлогорский переулок. </item>
+        <item>Автобус № 8</item>
+    </string-array>
+
+    <string-array name="mira60">
+        <item>Город: Красноярск</item>
+        <item>Район: Центральный</item>
+        <item>Улица: Мира проспект, 60</item>
+        <item>Контакные телефоны: 227-49-83</item>
+        <item>Как проехать:</item>
+        <item>ост. Дом Быта (Мира проспект).</item>
+        <item>Автобус № 1, 3, 12, 25, 36, 37, 55, 56, 76, 84, 85, 99</item>
+    </string-array>
+
+
+    <string-array name="molokova17">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Молокова, 17</item>
+        <item>Контакные телефоны: 277-53-97, 277- 53-97</item>
+        <item>Как проехать:</item>
+        <item>ост. Оптима. </item>
+        <item>Автобус № 49, 76 </item>
+    </string-array>
+
+    <string-array name="slavi7">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Славы, 7</item>
+        <item>Контакные телефоны: 225-90-21</item>
+        <item>Как проехать:</item>
+        <item>ост. 4-й микрорайон.</item>
+        <item>Автобус № 23, 50, 60, 61, 63, 64, 69, 87</item>
+    </string-array>
+
+    <string-array name="metallurgov8a">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Металлургов, 8а</item>
+        <item>Контакные телефоны: 299-40-72</item>
+        <item>Как проехать:</item>
+        <item>ост. 3-й микрорайон.</item>
+        <item>Автобус № 13, 20, 23, 61, 65, 69, 71 </item>
+    </string-array>
+
+
+    <string-array name="krasrab66">
+        <item>Город: Красноярск</item>
+        <item>Район: Ленинский</item>
+        <item>Улица: Красноярский Рабочий, 66</item>
+        <item>Контакные телефоны: 264-54-01, 264-53-53</item>
+        <item>Как проехать:</item>
+        <item>ост. Художественная галерея.</item>
+        <item>Трамвай № 2, 4, 7.</item>
+        <item>Автобус № 1, 2, 3, 8, 10, 19, 23, 43, 58, 60, 84, 90, 95, 100, 159, 193</item>
+    </string-array>
+
+    <string-array name="krasrab100">
+        <item>Город: Красноярск</item>
+        <item>Район: Кировский</item>
+        <item>Улица: Красноярский Рабочий, 100</item>
+        <item>Контакные телефоны: 234-95-23</item>
+        <item>Как проехать:</item>
+        <item>ост. Кинотеатр Родина. </item>
+        <item>Трамвай № 4, 5, 6, 7. </item>
+        <item>Автобус № 1, 2, 9, 18, 23, 28, 33, 40, 43, 55, 79, 89, 90, 95, 159 </item>
+    </string-array>
+
+    <string-array name="totmina3">
+        <item>Город: Красноярск</item>
+        <item>Район: Октябрьский</item>
+        <item>Улица: Тотмина, 3</item>
+        <item>Контакные телефоны: 245-85-86, 299-71-99</item>
+        <item>Как проехать:</item>
+        <item>отс. Кинотеатр Строитель. </item>
+        <item>Троллейбус № 4, 6, 13. </item>
+        <item>Автобус № 14, 34, 35, 38, 44, 52, 71, 80, 84, 88, 89, 91, 99, 100 </item>
+    </string-array>
+
+    <string-array name="vzletnaya6a">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Взлетная, 6а</item>
+        <item>Контакные телефоны: 277-71-10</item>
+        <item>Как проехать:</item>
+        <item>ост. Сибчелендж.</item>
+        <item>Автобус 20, 50, 53, 63, 71, 74, 79, 81</item>
+    </string-array>
+
+    <string-array name="dmaya37">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: 9 Мая, 37</item>
+        <item>Контакные телефоны: 266-36-11</item>
+        <item>График работы: ПН - ВС с 8:00 до 21:00 </item>
+        <item>Как проехать:</item>
+        <item>ост. 9 мая. </item>
+        <item>Троллейбус № 8. </item>
+        <item>Автобус № 6, 8, 23, 61, 65, 68, 69, 71, 79, 81, 87, 88, 98</item>
+    </string-array>
+
+    <string-array name="borisevicha20">
+        <item>Город: Красноярск</item>
+        <item>Район: Ленинский</item>
+        <item>Улица: Борисевича, 20</item>
+        <item>Контакные телефоны: 268-57-49</item>
+        <item>Как проехать:</item>
+        <item>ост. Новостройка (ул. Боричевича).</item>
+        <item>Автобус № 9, 44, 74, 90 </item>
+    </string-array>
+
+
+    <string-array name="aerovokzalnaya6">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: Аэровокзальная, 6</item>
+        <item>Контакные телефоны: 228-34-78, 228-09-78</item>
+        <item>Как проехать:</item>
+        <item>ост. Аэровокзальная.</item>
+        <item>Троллейбус № 2, 11</item>
+        <item>Автобус № 13, 49, 50, 53, 60, 63, 68, 71, 76, 79, 81, 99</item>
+    </string-array>
+
+    <string-array name="shevchenko5">
+        <item>Город: Красноярск</item>
+        <item>Район: Ленинский</item>
+        <item>Улица: Шевченко, 5</item>
+        <item>Контакные телефоны: 297-45-80</item>
+        <item>Как проехать:</item>
+        <item>ост. Школа №100</item>
+        <item>Автобус № 56, 61, 95</item>
+    </string-array>
+
+    <string-array name="shorsa41">
+        <item>Город: Красноярск</item>
+        <item>Район: Кировский</item>
+        <item>Улица: Щорса, 41</item>
+        <item>Контакные телефоны: 237-61-32, 260-83-86</item>
+        <item>Как проехать:</item>
+        <item>ост. Рынок Мави.</item>
+        <item>Трамвай № 4, 6 </item>
+        <item>Автобус № 3, 33, 44, 55, 65, 74, 79, 94</item>
+    </string-array>
+
+
+
+    <string-array name="shorsa66">
+        <item>Город: Красноярск</item>
+        <item>Район: Кировский</item>
+        <item>Улица: Щорса, 66</item>
+        <item>Контакные телефоны: 213-48-83</item>
+        <item>Как проехать:</item>
+        <item>ост. Дом творчества. </item>
+        <item>Трамвай № 4, 5, 6, 7. </item>
+        <item>Автобус № 3, 28, 33, 44, 65, 74, 79, 94 </item>
+    </string-array>
+
+    <string-array name="sixtyyearsussr7b">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: 60 лет образования СССР, проспект 7б</item>
+        <item>Контакные телефоны: 225-67-48</item>
+        <item>Как проехать:</item>
+        <item>ост. Рынок (Солнечный).</item>
+        <item>Автобус № 23, 60, 61, 63, 64, 69, 87 </item>
+    </string-array>
+
+
+    <string-array name="fourtyyearpobed30">
+        <item>Город: Красноярск</item>
+        <item>Район: Советский</item>
+        <item>Улица: 40 лет Победы, 30д</item>
+        <item>Контакные телефоны: 223-50-50</item>
+        <item>График работы:	ПН - ВС с 8:00 до 22:00</item>
+        <item>Как проехать:</item>
+        <item>ост. Простоквашино.</item>
+        <item>Автобус № 87</item>
+    </string-array>
+
+    <string-array name="zavodskaya4">
+        <item>Город: Красноярск</item>
+        <item>Район: Железнодорожный</item>
+        <item>Улица: Заводская, 4</item>
+        <item>Контакные телефоны: 201-79-93</item>
+        <item>Как проехать:</item>
+        <item>ост. Красной гвардии. </item>
+        <item>Автобус № 3, 5, 52, 53, 88, 99</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <string name="emptyElements">Нет элементов для отображения</string>
+
+
+
 
 
 </resources>
