@@ -14,7 +14,8 @@ import android.widget.TextView;
 public class AboutPharmacyActivity extends ActionBarActivity {
 
     public void findme(View view) {
-        String geoURI = "geo:0,0?q=красноярск+заводская 4&z=20";
+        String pharmacyadress = getIntent().getExtras().getString("pharmacyadress");
+        String geoURI = "geo:0,0?q=красноярск+"+pharmacyadress+" 4&z=20";
         Uri geo = Uri.parse(geoURI);
         Intent geoMap = new Intent(Intent.ACTION_VIEW, geo);
         startActivity(geoMap);
@@ -26,7 +27,7 @@ public class AboutPharmacyActivity extends ActionBarActivity {
         setContentView(R.layout.activity_about_apteks);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         TextView pharmname;
-        String pharmacyname = getIntent().getExtras().getString("drugname");
+        String pharmacyname = getIntent().getExtras().getString("pharmacyname");
         pharmname=(TextView) findViewById(R.id.textView2);
         pharmname.setText(pharmacyname);
 
