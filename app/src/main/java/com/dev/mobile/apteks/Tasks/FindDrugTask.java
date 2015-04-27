@@ -1,7 +1,6 @@
 package com.dev.mobile.apteks.Tasks;
 
-import android.app.Activity;
-import android.content.Context;
+
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
@@ -27,9 +26,9 @@ public class FindDrugTask  extends AsyncTask <Void, Void, ArrayList<Drug>>{
     @Override
     protected ArrayList<Drug> doInBackground(Void... params) {
         try {
-            return Drug.findDrug(this.searchString);
+            return Drug.findDrug(this.searchString, this.adapter);
         } catch(Exception ex) {
-
+            Log.i("tag", "tag");
         }
 
         return null;
@@ -57,8 +56,6 @@ public class FindDrugTask  extends AsyncTask <Void, Void, ArrayList<Drug>>{
         } else {
             view.findViewById(R.id.empty).setVisibility(View.GONE);
         }
-
-
 
     }
 }
