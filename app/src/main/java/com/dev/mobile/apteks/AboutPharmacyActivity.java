@@ -195,7 +195,6 @@ public class AboutPharmacyActivity extends ActionBarActivity {
         for (int i=0; i<array.length; i++) {
             stringBuilder.append(array[i]+"\n");
         }
-
         TextView textView;
         textView= (TextView) findViewById(R.id.conactdata);
         textView.setText(stringBuilder.toString());
