@@ -4,14 +4,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/textSearchName"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите название лекарства"
-        android:imeOptions="actionSearch"
-        android:inputType="text"
-        android:drawableLeft="@android:drawable/ic_menu_search"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/textSearchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите название лекарства"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_clear_search"
+            android:layout_gravity="right"
+            android:id="@+id/clearSearchFieldButton"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="35dp">
+
+            <View
+                style="@style/Divider"
+                />
+        </FrameLayout>
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

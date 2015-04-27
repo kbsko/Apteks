@@ -17,8 +17,20 @@ import java.util.ArrayList;
 public class FindDrugsAdapter extends BaseAdapter {
     private ArrayList<Drug> listData;
     private LayoutInflater inflater;
+    private int pageNum;
+
+    public int getPageNum() {
+        return this.pageNum;
+    }
+
+    public int increasePageNum() {
+        //this.pageNum++;
+        return this.pageNum++;  // postfix magic >_<
+    }
 
     public void clear() {
+        this.pageNum = 1;
+
         if(this.listData != null) {
             this.listData.clear();
         }
@@ -27,6 +39,12 @@ public class FindDrugsAdapter extends BaseAdapter {
     }
 
     public ArrayList<Drug> getData() {
+
+        // prevent returning null after "not found"
+        if(this.listData == null) {
+            return (this.listData = new ArrayList<Drug>());
+        }
+
         return this.listData;
     }
 
@@ -38,6 +56,7 @@ public class FindDrugsAdapter extends BaseAdapter {
     public FindDrugsAdapter(Context c) {
         this.inflater = LayoutInflater.from(c);
         this.listData = new ArrayList<Drug>();
+        this.pageNum = 1;
     }
 
     @Override

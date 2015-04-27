@@ -22,6 +22,7 @@ import java.util.ArrayList;
 public class Drug {
     private static final String SEARCH_URL = "http://kraslek.ru/search?query=";
     private static final int READ_TIMEOUT = 10000;
+    private static boolean emptyAnswerFlag;
 
     private String drugName;
     private String drugPrice;
@@ -29,7 +30,12 @@ public class Drug {
     private String pharmacyAddress;
     private String pharmacyHref;
 
-    public static ArrayList<Drug> findDrug(String searchName) throws UnsupportedEncodingException, MalformedURLException, IOException {
+
+
+    public static ArrayList<Drug> findDrug(String searchName, FindDrugsAdapter adapter)
+            throws UnsupportedEncodingException, MalformedURLException, IOException {
+
+        emptyAnswerFlag = false;
 
         if (searchName == null || searchName.length() == 0) {
             return null;
@@ -39,7 +45,7 @@ public class Drug {
         searchName = URLEncoder.encode(searchName, "UTF-8");
 
         // TODO add districts and sort
-        String urlString = SEARCH_URL + searchName + "&city=1&area=0";
+        String urlString = SEARCH_URL + searchName + "&city=1&area=0" + "&page=" + Integer.toString(adapter.increasePageNum());
 
         URL url = new URL(urlString);
 
@@ -72,15 +78,15 @@ public class Drug {
         Document doc = Jsoup.parse(sb.toString());
         Elements mainElements = doc.select("ol[start] > li");
 
+        ArrayList<Drug> drugList;
+
+        if(adapter == null) {
+            drugList = new ArrayList<Drug>();
+        } else {
+            drugList = adapter.getData();
+        }
+
         if (mainElements.size() > 0) {
-
-            ArrayList<Drug> drugList;
-
-           // if(adapter == null) {
-                drugList = new ArrayList<Drug>();
-          //  } else {
-            //    drugList = adapter.getData();
-           // }
 
             for (int i = 0; i < mainElements.size(); i++) {
 
@@ -114,11 +120,15 @@ public class Drug {
 
                 drugList.add(drug);
             }
-
-            return drugList;
+        } else {  // need for no "loadMore" action
+            emptyAnswerFlag = true;
         }
 
-        return null;
+        return drugList;
+    }
+
+    public static boolean getEmptyAnswerFlag () {
+        return emptyAnswerFlag;
     }
 
     public String getPharmacyAddress() {
