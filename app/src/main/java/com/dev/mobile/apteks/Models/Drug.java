@@ -32,7 +32,7 @@ public class Drug {
 
 
 
-    public static ArrayList<Drug> findDrug(String searchName, FindDrugsAdapter adapter)
+    public static ArrayList<Drug> findDrug(String searchName, String sort, String district, FindDrugsAdapter adapter)
             throws UnsupportedEncodingException, MalformedURLException, IOException {
 
         emptyAnswerFlag = false;
@@ -45,7 +45,12 @@ public class Drug {
         searchName = URLEncoder.encode(searchName, "UTF-8");
 
         // TODO add districts and sort
-        String urlString = SEARCH_URL + searchName + "&city=1&area=0" + "&page=" + Integer.toString(adapter.increasePageNum());
+        String urlString = SEARCH_URL
+                + searchName
+                + "&city=1"
+                + "&area=" + district
+                + "&sort=" + sort
+                + "&page=" + Integer.toString(adapter.increasePageNum());
 
         URL url = new URL(urlString);
 
@@ -61,7 +66,6 @@ public class Drug {
         connection.setReadTimeout(READ_TIMEOUT);
 
         connection.setDoInput(true);
-
 
         BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         StringBuilder sb = new StringBuilder();

@@ -1,7 +1,9 @@
 package com.dev.mobile.apteks;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -12,6 +14,8 @@ import android.widget.TextView;
 
 
 public class AboutPharmacyActivity extends ActionBarActivity {
+
+
 
     public void findme(View view) {
         String pharmacyadress = getIntent().getExtras().getString("pharmacyadress");
@@ -24,12 +28,28 @@ public class AboutPharmacyActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_about_apteks);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+
+
+
+
         TextView pharmname;
         String pharmacyname = getIntent().getExtras().getString("pharmacyname");
-        pharmname=(TextView) findViewById(R.id.textView2);
-        pharmname.setText(pharmacyname);
+
+
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle(pharmacyname);
+        ColorDrawable colorDrawable = new ColorDrawable();
+        colorDrawable.setColor(0xff0F7D1A);
+        actionBar.setBackgroundDrawable(colorDrawable);
+
+
+
 
         String pharmacyadress = getIntent().getExtras().getString("pharmacyadress");
 
@@ -186,10 +206,6 @@ public class AboutPharmacyActivity extends ActionBarActivity {
         }
 
 
-
-
-
-      //  pharmname.setText(pharmacyadress);
 
         StringBuilder stringBuilder=new StringBuilder();
         for (int i=0; i<array.length; i++) {
