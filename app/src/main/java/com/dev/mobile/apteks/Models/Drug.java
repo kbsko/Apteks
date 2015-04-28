@@ -67,7 +67,6 @@ public class Drug {
 
         connection.setDoInput(true);
 
-
         BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         StringBuilder sb = new StringBuilder();
         String tmp;
