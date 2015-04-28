@@ -60,10 +60,11 @@
             />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/districtSpinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/listdistrict"
+            android:entries="@array/districtList"
+
             />
     </LinearLayout>
 
@@ -81,10 +82,11 @@
             android:textStyle="bold|italic" />
 
         <Spinner
-            android:id="@+id/spinnersort"
+            android:id="@+id/sortSpinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/sortlist" />
+            android:entries="@array/sortList"
+            />
 
     </LinearLayout>
 

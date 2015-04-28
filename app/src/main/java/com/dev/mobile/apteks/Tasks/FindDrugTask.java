@@ -4,6 +4,7 @@ package com.dev.mobile.apteks.Tasks;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
+import android.widget.Spinner;
 
 import com.dev.mobile.apteks.Adapters.FindDrugsAdapter;
 import com.dev.mobile.apteks.Models.Drug;
@@ -26,7 +27,13 @@ public class FindDrugTask  extends AsyncTask <Void, Void, ArrayList<Drug>>{
     @Override
     protected ArrayList<Drug> doInBackground(Void... params) {
         try {
-            return Drug.findDrug(this.searchString, this.adapter);
+            Spinner spinner = (Spinner) this.view.findViewById(R.id.sortSpinner);
+            String sort = this.view.getResources().getStringArray(R.array.sortListValues)[spinner.getSelectedItemPosition()];
+
+            spinner = (Spinner) this.view.findViewById(R.id.districtSpinner);
+            String district = this.view.getResources().getStringArray(R.array.districtListValues)[spinner.getSelectedItemPosition()];
+
+            return Drug.findDrug(this.searchString, sort, district, this.adapter);
         } catch(Exception ex) {
             Log.i("tag", "tag");
         }

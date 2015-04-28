@@ -11,8 +11,10 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.dev.mobile.apteks.Adapters.FindDrugsAdapter;
@@ -21,7 +23,7 @@ import com.dev.mobile.apteks.Tasks.FindDrugTask;
 import com.dev.mobile.apteks.Tasks.LoadPageDrugTask;
 
 
-public class FindDrugsActivity extends ActionBarActivity { //implements View.OnClickListener {
+public class FindDrugsActivity extends ActionBarActivity {
     private FindDrugsAdapter adapter;
     private boolean loadingFlag = false;
     private String searchString;
@@ -36,8 +38,8 @@ public class FindDrugsActivity extends ActionBarActivity { //implements View.OnC
 
         ListView lsView = (ListView) findViewById(R.id.findDrugsListView);
 
-        View header = getLayoutInflater().inflate(R.layout.find_drugs_selectors, lsView, false);
-        lsView.addHeaderView(header, null, false);
+        //View header = getLayoutInflater().inflate(R.layout.find_drugs_selectors, lsView, false);
+        //lsView.addHeaderView(header, null, false);
 
         View footer = getLayoutInflater().inflate(R.layout.load_more, lsView, false);
         lsView.addFooterView(footer);
@@ -46,8 +48,35 @@ public class FindDrugsActivity extends ActionBarActivity { //implements View.OnC
         this.adapter = new FindDrugsAdapter(this);
 
         lsView.setAdapter(this.adapter);
-    }
 
+        Spinner spinner = (Spinner) findViewById(R.id.sortSpinner);
+
+        // TODO refactor this
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                new FindDrugTask(findViewById(android.R.id.content), adapter, searchString).execute();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spinner = (Spinner) findViewById(R.id.districtSpinner);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                new FindDrugTask(findViewById(android.R.id.content), adapter, searchString).execute();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
 
 
     @Override
@@ -83,7 +112,7 @@ public class FindDrugsActivity extends ActionBarActivity { //implements View.OnC
 
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
 
-                if (firstVisibleItem + visibleItemCount == totalItemCount && totalItemCount != 2) {
+                if (firstVisibleItem + visibleItemCount == totalItemCount && totalItemCount != 1) {
                     if (!loadingFlag && !Drug.getEmptyAnswerFlag()) {
                         loadingFlag = true;
 
@@ -102,26 +131,23 @@ public class FindDrugsActivity extends ActionBarActivity { //implements View.OnC
     }
 
 
-
     public void aboutAptek(View view) {
         Intent intent = new Intent(this, AboutPharmacyActivity.class);
         TextView phName;
         TextView phAdress;
-        phName=(TextView) view.findViewById(R.id.pharmacyName);
-        String pharmacyName=phName.getText().toString();
-        phAdress=(TextView) view.findViewById(R.id.pharmacyadress);
-        String pharmacyAdress=phAdress.getText().toString();
+        phName = (TextView) view.findViewById(R.id.pharmacyName);
+        String pharmacyName = phName.getText().toString();
+        phAdress = (TextView) view.findViewById(R.id.pharmacyadress);
+        String pharmacyAdress = phAdress.getText().toString();
         intent.putExtra("pharmacyname", pharmacyName);
         intent.putExtra("pharmacyadress", pharmacyAdress);
         startActivity(intent);
     }
 
 
-    //@Override
     public void onClick(View v) {
-        if(v.getId() == R.id.clearSearchFieldButton) {
-            ((EditText)findViewById(R.id.textSearchName)).setText("");
+        if (v.getId() == R.id.clearSearchFieldButton) {
+            ((EditText) findViewById(R.id.textSearchName)).setText("");
         }
-        //Log.i("tag", "tag");
     }
 }
