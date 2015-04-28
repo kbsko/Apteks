@@ -3,6 +3,7 @@ package com.dev.mobile.apteks;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +34,15 @@ public class FindDrugsActivity extends ActionBarActivity { //implements View.OnC
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // TODO create landscape layouts
 
         setContentView(R.layout.activity_find_drugs);
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle("Поиск лекарств");
+        ColorDrawable colorDrawable = new ColorDrawable();
+        colorDrawable.setColor(0xff0F7D1A);
+        actionBar.setBackgroundDrawable(colorDrawable);
+
+
 
         ListView lsView = (ListView) findViewById(R.id.findDrugsListView);
 
