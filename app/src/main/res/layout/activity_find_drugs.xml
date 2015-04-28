@@ -4,6 +4,93 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/textSearchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите название лекарства"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_clear_search"
+            android:layout_gravity="right"
+            android:id="@+id/clearSearchFieldButton"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="35dp">
+
+            <View
+                style="@style/Divider"
+                />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:text="Выберите район:"
+            />
+
+        <Spinner
+            android:id="@+id/districtSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/districtList"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Сортировать по:"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/sortSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sortList"
+            />
+
+    </LinearLayout>
+
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

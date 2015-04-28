@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortList">
+        <item>наименованию</item>
+        <item>цене</item>
+        <item>адресу аптеки</item>
+        <item>названию аптеки</item>
+    </string-array>
+
+    <string-array name="sortListValues">
+        <item></item>
+        <item>price</item>
+        <item>address</item>
+        <item>company</item>
+    </string-array>
+
+    <string-array name="districtList">
+        <item>Все районы</item>
+        <item>Железнодорожный</item>
+        <item>Кировский</item>
+        <item>Ленинский</item>
+        <item>Октябрьский</item>
+        <item>Покровский</item>
+        <item>Свердловский</item>
+        <item>Советский</item>
+        <item>Центральный</item>
+    </string-array>
+
+    <string-array name="districtListValues">
+        <item>0</item>
+        <item>3</item>
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>9</item>
+        <item>7</item>
+        <item>1</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string-array name="empty">
+        <item>Город: </item>
+        <item>Район: </item>
+        <item>Улица:</item>
+        <item>Контакные телефоны: </item>
+        <item>Как проехать:</item>
+    </string-array>
+
+</resources>
