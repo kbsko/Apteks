@@ -91,7 +91,6 @@ public class FindDrugsAdapter extends BaseAdapter {
         ((TextView) view.findViewById(R.id.drugName)).setText(drug.getDrugName());
         ((TextView) view.findViewById(R.id.drugPrice)).setText(drug.getDrugPrice());
         ((TextView) view.findViewById(R.id.pharmacyName)).setText(drug.getPharmacyName());
-        ((TextView) view.findViewById(R.id.pharmacyadress)).setText(drug.getPharmacyAddress());
 
         return view;
     }
