@@ -2,7 +2,31 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_background</item>
+
+        <item name="android:titleTextStyle">@style/ActionBarTitleStyle</item>
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/ab_background</item>
+        <item name="titleTextStyle">@style/ActionBarTitleStyle</item>
+
+    </style>
+
+    <style name="ActionBarTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        
     </style>
 
 

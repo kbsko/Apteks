@@ -44,6 +44,8 @@ public class FindDrugTask  extends AsyncTask <Void, Void, ArrayList<Drug>>{
     @Override
     protected void onPreExecute() {
         view.findViewById(R.id.findDrugProgressBar).setVisibility(View.VISIBLE);
+        view.findViewById(R.id.empty).setVisibility(View.GONE);
+
         this.adapter.clear();
 
         super.onPreExecute();
