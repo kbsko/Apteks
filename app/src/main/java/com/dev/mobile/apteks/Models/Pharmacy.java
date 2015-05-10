@@ -62,7 +62,7 @@ public class Pharmacy {
             pharmacy.setPharmacyCity(elements.get(0).text());
             pharmacy.setPharmacyDistrict(elements.get(1).text());
             pharmacy.setPharmacyAddress(elements.get(2).text());
-            pharmacy.setPharmacyPhone(elements.get(3).text());
+            pharmacy.setPharmacyPhone("+7(391)"+elements.get(3).text());
             pharmacy.setPharmacyBuses(elements.get(4).text());
         }
 
