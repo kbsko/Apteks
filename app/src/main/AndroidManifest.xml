@@ -18,10 +18,10 @@
         </activity>
         <activity
             android:name=".AboutPharmacyActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".FindDrugsActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/findDrugActivityName" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

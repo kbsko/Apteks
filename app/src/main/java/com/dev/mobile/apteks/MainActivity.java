@@ -27,7 +27,6 @@ public class MainActivity extends Activity {
 
 
     public void findDrugs(View view) {
-
         Intent intent = new Intent(this, FindDrugsActivity.class);
         startActivity(intent);
     }

@@ -37,19 +37,8 @@ public class FindDrugsActivity extends ActionBarActivity {
 
         setContentView(R.layout.activity_find_drugs);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle("Поиск лекарств");
-        ColorDrawable colorDrawable = new ColorDrawable();
-        colorDrawable.setColor(0xff0F7D1A);
-        actionBar.setBackgroundDrawable(colorDrawable);
-
-
 
         ListView lsView = (ListView) findViewById(R.id.findDrugsListView);
-
-        //View header = getLayoutInflater().inflate(R.layout.find_drugs_selectors, lsView, false);
-        //lsView.addHeaderView(header, null, false);
 
         View footer = getLayoutInflater().inflate(R.layout.load_more, lsView, false);
         lsView.addFooterView(footer);
@@ -134,24 +123,25 @@ public class FindDrugsActivity extends ActionBarActivity {
                 }
             }
         });
+
+        lsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(FindDrugsActivity.this, AboutPharmacyActivity.class);
+
+                String pharmacyName = ((Drug)parent.getItemAtPosition(position)).getPharmacyName();
+                String pharmacyHref = ((Drug)parent.getItemAtPosition(position)).getPharmacyHref();
+
+                intent.putExtra("pharmacyName", pharmacyName);
+                intent.putExtra("pharmacyHref", pharmacyHref);
+
+                startActivity(intent);
+            }
+        });
     }
 
     public void resetLoadingFlag() {
         this.loadingFlag = false;
-    }
-
-
-    public void aboutAptek(View view) {
-        Intent intent = new Intent(this, AboutPharmacyActivity.class);
-        TextView phName;
-        TextView phAdress;
-        phName = (TextView) view.findViewById(R.id.pharmacyName);
-        String pharmacyName = phName.getText().toString();
-        phAdress = (TextView) view.findViewById(R.id.pharmacyadress);
-        String pharmacyAdress = phAdress.getText().toString();
-        intent.putExtra("pharmacyname", pharmacyName);
-        intent.putExtra("pharmacyadress", pharmacyAdress);
-        startActivity(intent);
     }
 
 
