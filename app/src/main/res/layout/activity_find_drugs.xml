@@ -57,7 +57,8 @@
             android:layout_height="wrap_content"
             android:textStyle="bold|italic"
             android:text="Выберите район:"
-            />
+            android:textColor="#008F3E"
+            android:textSize="18dp" />
 
         <Spinner
             android:id="@+id/districtSpinner"
@@ -79,7 +80,9 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Сортировать по:"
-            android:textStyle="bold|italic" />
+            android:textColor="#008F3E"
+            android:textStyle="bold|italic"
+            android:textSize="18dp" />
 
         <Spinner
             android:id="@+id/sortSpinner"

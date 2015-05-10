@@ -20,7 +20,7 @@
     <string name="districtLabel">Район:</string>
     <string name="streetLabel">Улица:</string>
     <string name="phoneLabel">Телефон:</string>
-    <string name="busLabel">Как проехать:</string>
+    <string name="busLabel">Дополнительная информация:</string>
 
 
 
