@@ -15,7 +15,7 @@
     <string name="buttonshowonmap">Показать на карте</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_findlekarstv">findlekarstv</string>
-
+    <string name="cityLabe">Город:</string>
     <string name="cityLabel">Город:</string>
     <string name="districtLabel">Район:</string>
     <string name="streetLabel">Улица:</string>
