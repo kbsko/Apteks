@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Аптеки Красноярск</string>
+    <string name="app_name">Поиск лекарств</string>
     <string name="findDrugActivityName">Поиск лекарств</string>
 
     <string name="emptyElements">Нет элементов для отображения</string>

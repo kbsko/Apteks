@@ -17,7 +17,10 @@ public class AboutPharmacyActivity extends ActionBarActivity {
 
 
     public void findme(View view) {
-        String pharmacyadress = getIntent().getExtras().getString("pharmacyadress");
+        TextView textView = (TextView) findViewById(R.id.pharmacyAddress);
+        String pharmacyadress = (String) textView.getText();
+
+      //  String pharmacyadress = getIntent().getExtras().getString("pharmacyadress");
         String geoURI = "geo:0,0?q=красноярск+"+pharmacyadress+" 4&z=20";
         Uri geo = Uri.parse(geoURI);
         Intent geoMap = new Intent(Intent.ACTION_VIEW, geo);
