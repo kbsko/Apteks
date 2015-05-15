@@ -13,19 +13,30 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.dev.mobile.apteks.Adapters.DrugAutoCompleteAdapter;
 import com.dev.mobile.apteks.Adapters.FindDrugsAdapter;
+import com.dev.mobile.apteks.Components.DelayedAutoCompleteTextView;
 import com.dev.mobile.apteks.Models.Drug;
 import com.dev.mobile.apteks.Tasks.FindDrugTask;
 import com.dev.mobile.apteks.Tasks.LoadPageDrugTask;
 
+import java.util.ArrayList;
+
 
 public class FindDrugsActivity extends ActionBarActivity {
+    private final int MIN_CHAR_TO_SUGGEST = 3;
+
     private FindDrugsAdapter adapter;
+    private DrugAutoCompleteAdapter suggestAdapter;
+
     private boolean loadingFlag = false;
     private String searchString;
 
@@ -36,6 +47,16 @@ public class FindDrugsActivity extends ActionBarActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // TODO create landscape layouts
 
         setContentView(R.layout.activity_find_drugs);
+
+        DelayedAutoCompleteTextView searchTextView = (DelayedAutoCompleteTextView) findViewById(R.id.textSearchName);
+
+
+        this.suggestAdapter = new DrugAutoCompleteAdapter(this);
+
+        searchTextView.setAdapter(this.suggestAdapter);
+        searchTextView.setThreshold(MIN_CHAR_TO_SUGGEST);
+        searchTextView.setLoadingIndicator((ProgressBar) findViewById(R.id.autocompleteProgressBar));
+
 
 
         ListView lsView = (ListView) findViewById(R.id.findDrugsListView);

@@ -21,6 +21,9 @@ import java.util.ArrayList;
 
 public class Drug {
     private static final String SEARCH_URL = "http://kraslek.ru/search?query=";
+    private static final String SUGGESTED_URL = "http://kraslek.ru/search/suggest?limit=5&q=";
+
+
     private static final int READ_TIMEOUT = 10000;
     private static boolean emptyAnswerFlag;
 
@@ -30,6 +33,45 @@ public class Drug {
     private String pharmacyAddress;
     private String pharmacyHref;
 
+    public static ArrayList<String> getSuggestedDrugs(String search) throws UnsupportedEncodingException, MalformedURLException, IOException {
+        if(search == null || search.length() == 0) {
+            return null;
+        }
+
+        search = URLEncoder.encode(search, "UTF-8");
+
+        URL url = new URL(SUGGESTED_URL + search);
+
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+
+        connection.setRequestMethod("GET");
+
+        connection.setRequestProperty("Accept-Encoding", "deflate");
+        connection.setRequestProperty("Accept-Charset", "utf-8");
+        connection.setRequestProperty("Content-Type", "text/html");
+        connection.setRequestProperty("Connection", "Close");
+
+        connection.setReadTimeout(READ_TIMEOUT);
+
+        connection.setDoInput(true);
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        String tmp;
+
+        ArrayList<String> result = new ArrayList<String>();
+
+        int i = 0;
+
+        while ((tmp = br.readLine()) != null && i++ < 5) {
+            result.add(tmp);
+            //sb.append(tmp);
+        }
+
+        connection.disconnect();
+
+        return result;
+    }
 
 
     public static ArrayList<Drug> findDrug(String searchName, String sort, String district, FindDrugsAdapter adapter)
