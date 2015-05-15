@@ -4,9 +4,11 @@
     <string name="app_name">Поиск лекарств</string>
     <string name="findDrugActivityName">Поиск лекарств</string>
 
+    <string name="searchHint">Введите название лекарства</string>
+
     <string name="emptyElements">Нет элементов для отображения</string>
 
-    <string name="hello_world">Version 1</string>
+    <string name="version">Version 1.1</string>
     <string name="FindLekar">Поиск лекарств</string>
     <string name="StringFindApteks">Ближайшие Аптеки</string>
     <string name="picture">picture1</string>
